@@ -1,6 +1,16 @@
 <h2>Woordenschat</h2>
 <ul>
   <li *ngFor="let woord of woorden">
-    <strong>{{ woord.woord }}</strong>: {{ woord.betekenis }}
+    <!-- <strong>{{ woord.woord }}</strong>: {{ woord.betekenis }} -->
+
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title> {{ woord.woord }} </mat-panel-title>
+          </mat-expansion-panel-header>
+        <p>{{ woord.betekenis }}</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+    
   </li>
 </ul>

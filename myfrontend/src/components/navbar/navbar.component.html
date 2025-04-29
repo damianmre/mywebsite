@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" class="navbar">
+  <a routerLink="/" style="text-decoration: none; color: inherit;">
+    <h1 class="navbar-title">MyFrontend</h1>
+  </a>
+  
+    <span class="spacer"></span>
+  
+    <div class="nav-links desktop">
+      <a mat-button routerLink="/woordenschat">Woordenschat</a>
+      <a mat-button routerLink="/about">About</a>
+      <a mat-button routerLink="/contact">Contact</a>
+    </div>
+  
+    <div class="mobile">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/woordenschat">Woordenschat</button>
+        <button mat-menu-item routerLink="/about">About</button>
+        <button mat-menu-item routerLink="/contact">Contact</button>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+  
