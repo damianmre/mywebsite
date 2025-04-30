@@ -6,9 +6,9 @@
   <span class="spacer"></span>
 
   <div class="nav-links desktop">
-    <a mat-button routerLink="/woordenschat">Woordenschat</a>
-    <a mat-button routerLink="/about">About</a>
-    <a mat-button routerLink="/contact">Contact</a>
+    <a mat-button routerLink="/woordenschat" routerLinkActive="active">Woordenschat</a>
+    <a mat-button routerLink="/about" routerLinkActive="active">About</a>
+    <a mat-button routerLink="/contact" routerLinkActive="active">Contact</a>
   </div>
 
   <div class="mobile">
@@ -16,9 +16,11 @@
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item routerLink="/woordenschat">Woordenschat</button>
-      <button mat-menu-item routerLink="/about">About</button>
-      <button mat-menu-item routerLink="/contact">Contact</button>
+      <button mat-menu-item routerLink="/woordenschat" routerLinkActive="active">
+        Woordenschat
+      </button>
+      <button mat-menu-item routerLink="/about" routerLinkActive="active">About</button>
+      <button mat-menu-item routerLink="/contact" routerLinkActive="active">Contact</button>
     </mat-menu>
   </div>
 </mat-toolbar>
