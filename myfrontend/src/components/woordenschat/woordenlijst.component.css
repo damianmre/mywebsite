@@ -1,5 +1,10 @@
-ul {
+.mat-mdc-list-item {
+    margin-bottom: 10px;
     padding: 0;
+}
+
+.mat-expansion-panel {
+    background-color: antiquewhite;
 }
 
 ::ng-deep mat-expansion-panel-header {

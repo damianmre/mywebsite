@@ -1,9 +1,10 @@
-html, body { 
-    height: 100%; 
+html,
+body {
+  height: 100%;
 }
-body { 
-    margin: 100px; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
-    background-color: #fefbeb;     
-    color: #333; 
+body {
+  margin: 100px;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background-color: #fefbeb;
+  color: #333;
 }
