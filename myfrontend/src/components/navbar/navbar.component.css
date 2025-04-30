@@ -18,24 +18,29 @@
 a[mat-button] {
   color: #444;
   font-weight: 500;
+  font-size: 1.4em;
   text-transform: none;
   margin-left: 10px;
 }
 
-/* Hover effect */
-a[mat-button]:hover::after,
-a[mat-button].active::after {
+/* Basisstijl: lijn is eerst onzichtbaar (scaleX 0) */
+a[mat-button]::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 1px;
+  height: 2px;
   background-color: #444;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 
+/* Hover en active: lijn komt van links naar rechts in beeld */
+a[mat-button]:hover::after,
 a[mat-button].active::after {
-  background-color: #444;
+  transform: scaleX(1);
 }
 
 .desktop {
